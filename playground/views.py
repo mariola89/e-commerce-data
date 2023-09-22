@@ -11,5 +11,7 @@ from django.db import transaction
 
 
 def say_hello(request):
+    cart = Cart(pk=10)
+    cart.delete()
 
     return render(request, 'hello.html', {'name': 'Mosh'})

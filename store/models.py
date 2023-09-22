@@ -59,9 +59,6 @@ class Customer(models.Model):
     class Meta:
         ordering = ['first_name', 'last_name']
 
-    class Meta:
-        ordering = ['first_name']
-
 
 class Order(models.Model):
     PAYMENT_STATUS_PENDING = 'P'
